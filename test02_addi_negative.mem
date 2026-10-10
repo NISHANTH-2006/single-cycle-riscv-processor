@@ -1,0 +1,27 @@
+FFF00193
+FFB00213
+00000000
+
+machine code:
+addi x3, x0, -1
+addi x4, x0, -5
+
+
+expected result:
+
+| Register | Value    |
+| -------- | -------- |
+| x3       | FFFFFFFF |
+| x4       | FFFFFFFB |
+
+Instruction 1
+Instruction = FFF00193
+ALU Result  = FFFFFFFF
+WriteBack   = FFFFFFFF
+
+Instruction 2
+Instruction = FFB00213
+ALU Result  = FFFFFFFB
+WriteBack   = FFFFFFFB
+
+program status : success or fail
